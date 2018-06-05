@@ -25,12 +25,12 @@ phases:
     commands:
       - echo Entered the pre_build phase...
       - cp .env.example .env
-      - php artisan key:generate
+        # - php artisan key:generate
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - php vendor/bin/phpunit --testdox
+        # - php vendor/bin/phpunit --testdox
   post_build:
     commands:
       - echo Entered the post_build phase...
