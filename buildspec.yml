@@ -21,8 +21,6 @@ phases:
         # - apt install php7.2 php7.2-common php7.2-cli php7.2-fpm
         # - apt-get install -y php7.2
         # - composer install
-      - composer global require "laravel/installer"
-      - composer require phpunit/phpunit
   pre_build:
     commands:
       - echo Entered the pre_build phase...
