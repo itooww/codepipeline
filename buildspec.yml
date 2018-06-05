@@ -8,6 +8,9 @@ phases:
       - ls -al
       - which composer
       - whoami
+      - echo $COMPOSER_ALLOW_SUPERUSER
+      - export COMPOSER_ALLOW_SUPERUSER="1"
+      - echo $COMPOSER_ALLOW_SUPERUSER
       - composer install
   pre_build:
     commands:
