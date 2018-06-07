@@ -10,10 +10,10 @@ hooks:
   AfterInstall:
 #     - location: Scripts/RunResourceTests.sh
 #       timeout: 180
-   ApplicationStart:
+  ApplicationStart:
 #     - location: Scripts/RunFunctionalTests.sh
 #       timeout: 3600
-   ValidateService:
+  ValidateService:
 #     - location: Scripts/MonitorService.sh
 #       timeout: 3600
 #       runas: codedeployuser
