@@ -35,6 +35,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - touch post_build.txt
       # - zip -r project *
 
 # artifacts:
