@@ -36,9 +36,11 @@ phases:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
       - touch post_build.txt
+      - echo $CODEBUILD_SRC_DIR 
       # - zip -r project *
 
-# artifacts:
-  # type: zip
-  # files:
+artifacts:
+  type: zip
+  files:
     # - project.zip
+    - '**/*'
